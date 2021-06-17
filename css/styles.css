@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Museo-700';
+    src: url(/fonts/Museo700-Regular.otf);
+}
+
+@font-face {
+    font-family: 'SignikaNegative-Regular';
+    src: url(/fonts/SignikaNegative-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url(/fonts/OpenSans-Semibold.ttf);
+}
+
+
+*,
+*::after,
+*::before 
+{
+    box-sizing: border-box;
+    font-family: 'OpenSans-Semibold';
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+header {
+    margin-top: 50px;
+}
+
+nav {
+    line-height: 2em;
+    margin-bottom: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navbar-brand {
+    float: left;
+    font-family: 'Museo-700';
+    font-size: 48px;
+    color: #06509d;
+    padding-left: 30px;
+    position: relative;
+}
+
+.navbar-brand::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #06509d;
+    left: 10px;
+    top: 13px;
+}
+
+.navbar-brand:hover {
+    color: #0e57a1;
+} 
+
+.collapse {
+    float: right;
+}
+
+.navbar-nav {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    float: left;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 60px;
+    color: #003764;
+    font-family: 'SignikaNegative-Regular';
+    font-size: 18px;
+}
+
+.nav-item a:hover {
+    color: #0e57a1;
+}
+
+a {
+     text-decoration: none;
+}
+
+/* End Header */
+
+/* Main */
+
+main {
+    width: 100%;
+    background-image: url(/images/backgound-image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+/* End Main */
